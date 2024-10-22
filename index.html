@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#create-story">Create Story</a></li>
+            <li><a href="#profile">Profile</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <h1>Welcome to My Home Page</h1>
+        <div class="story-feed">
+            <h2>Recent Stories</h2>
+            <div id="stories-list">
+                <!-- Stories will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Create Story Section -->
+    <section id="create-story" class="section">
+        <h2>Create a New Story</h2>
+        <form id="story-form">
+            <label for="story-title">Story Title:</label>
+            <input type="text" id="story-title" name="story-title" required>
+
+            <label for="story-content">Story Content:</label>
+            <textarea id="story-content" name="story-content" required></textarea>
+
+            <button type="submit">Submit Story</button>
+            <p id="validation-error" class="error"></p>
+        </form>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="section">
+        <h2>Profile Information</h2>
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Email:</strong> john.doe@example.com</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
